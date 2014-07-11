@@ -1,0 +1,77 @@
+ body{
+  background-color: lightgrey;
+ }
+
+ .spin, .grow, .skew, .flower{
+  
+  margin: 10%;
+  display: inline;
+ }
+ 
+.grow, .skew, .flower{
+  transition:all 1s linear;
+}
+
+ .spin{
+transition:all 5s linear;
+ }
+
+.spin:hover {
+     -ms-transform: rotateX(720deg)
+                        rotateY(720deg)
+                        rotateZ(720deg); 
+
+     -webkit-transform: rotateX(720deg)
+                        rotateY(720deg)
+                        rotateZ(720deg);
+
+     transform: rotateX(720deg)
+                        rotateY(720deg)
+                        rotateZ(720deg);
+   
+     } 
+
+ .grow{
+  margin-left: 50%;
+ }
+
+.grow:hover {
+     -ms-transform: scale(3,3); 
+     -webkit-transform: scale(3,3); 
+     transform: scale(3,3);
+ } 
+
+.skew{
+  margin-bottom: 20%;
+}
+
+.skew:hover{
+      -ms-transform: skew(30deg,20deg); 
+     -webkit-transform: skew(30deg,20deg); 
+     transform: skew(30deg,20deg);
+ }
+
+.flower {
+  margin-left: 60%;
+  height: 5%;
+}
+.flower:hover{
+  -ms-transform: scale(3.75,5); 
+     -webkit-transform: scale(3.75,5); 
+     transform: scale(3.75,5); 
+}
+
+.daisy{
+  width: 5%;
+}
+
+
+ img{
+  width: 20%
+ }
+ h1{
+  color: red;
+  text-align: center;
+  font-size: 3em;
+ }
+
